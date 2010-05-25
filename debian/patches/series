@@ -1,3 +1,4 @@
+libtool-fix.patch
 panel_draw_label_text.patch
 kbled.patch
 batt_status.patch

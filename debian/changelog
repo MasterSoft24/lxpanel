@@ -7,9 +7,10 @@ lxpanel (0.5.5-4) unstable; urgency=high
     - kbled.patch - keyboard LDE status (Closes:#563186)
     - panel_draw_label_text.patch - potential buffer overflow
   * Use DH7
+  * Apply libtool-fix.patch fix FTBFS with binutils-gold. (Close:#555575)
   * Set urgency=high for buffer overflow fix
 
- -- Andrew Lee (李健秋) <ajqlee@debian.org>  Mon, 24 May 2010 16:31:57 +0800
+ -- Andrew Lee (李健秋) <ajqlee@debian.org>  Tue, 25 May 2010 23:24:29 +0800
 
 lxpanel (0.5.5-3) unstable; urgency=high
 
