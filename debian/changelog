@@ -1,6 +1,6 @@
 lxpanel (0.5.6-1) unstable; urgency=low
 
-  * New upstream release
+  * New upstream release (Closes:#555575, #577599, #581980) 
     - Reduced unnecessary flickers during resizing icon grid
     - Fixed uninitialized variable that causes initial panel color 
       selector to be wrong
@@ -36,8 +36,16 @@ lxpanel (0.5.6-1) unstable; urgency=low
     - Workaround for popup positioning
     - Fixed CPUFreq plugin 
     - Changed behavior of strut in Autohide case 
+  * Drop patches that included in upstream:
+    - g_locale_to_utf8.patch 
+    - kbled.patch libtool-fix.patch 
+    - panel_draw_label_text.patch 
+    - sort_dirmenu.patch 
+  * Applied redefine-alarm-variable.patch (Closes:#583986) from 
+    Julien Lavergne <gilir@ubuntu.com>
+  * Bumped Standard-version to 3.9.1 
 
- -- Andrew Lee (李健秋) <ajqlee@debian.org>  Wed, 28 Jul 2010 15:28:42 -0400
+ -- Andrew Lee (李健秋) <ajqlee@debian.org>  Wed, 28 Jul 2010 16:12:08 -0400
 
 lxpanel (0.5.5-4) unstable; urgency=high
 
