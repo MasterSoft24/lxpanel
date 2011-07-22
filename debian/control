@@ -15,7 +15,7 @@ Vcs-Browser: http://git.debian.org/?p=pkg-lxde/lxpanel.git
 
 Package: lxpanel
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, lxmenu-data
+Depends: ${misc:Depends}, ${shlibs:Depends}, lxmenu-data
 Recommends: manpages-dev
 Suggests: lxsession-lite (>=0.3.5) | lxsession (>=0.3.2) | menu, www-browser
 Description: a lightweight desktop panel for X
