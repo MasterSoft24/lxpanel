@@ -1,9 +1,9 @@
 Description: Add configuration for desktop number for the pager plugin.
 Author: Julien Lavergne <gilir@ubuntu.com>
 
---- lxpanel-0.5.6.orig/src/plugins/pager.c
-+++ lxpanel-0.5.6/src/plugins/pager.c
-@@ -775,6 +775,80 @@ static void pager_destructor(Plugin * p)
+--- a/src/plugins/pager.c
++++ b/src/plugins/pager.c
+@@ -811,6 +811,80 @@
      g_free(pg);
  }
  
@@ -84,7 +84,7 @@ Author: Julien Lavergne <gilir@ubuntu.com>
  /* Callback when panel configuration changes. */
  static void pager_panel_configuration_changed(Plugin * p)
  {
-@@ -800,7 +874,7 @@ PluginClass pager_plugin_class = {
+@@ -836,7 +910,7 @@
  
      constructor : pager_constructor,
      destructor  : pager_destructor,
