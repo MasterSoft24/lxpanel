@@ -1,3 +1,53 @@
+lxpanel (0.5.7-1) unstable; urgency=low
+
+  * Use debhelper 8
+  * Sorting build-depends.
+  * Wapping build-depends.
+  * Bumped Standard-Version to 3.9.2.
+  * Updating Vcs-Browser and Vcs-Git tags.
+  * Sorting depends.
+  * Removing useless whitespaces at EOL and EOF.
+  * Removing debian/dirs: let upstream makefile do the work.
+  * Removing empty NEWS in debian/docs.
+  * Removing debian/README.source: source format 3.0 (quilt) explains.
+  * Enable dh_auto_test in debian/rules.
+  * Compacting watch file.
+  * Added debian/source/options file.
+  * Merging upstream version 0.5.7:
+    (Cloese: #586352, #631263, #609909, #598824, #588532, #608419)
+    - Fix usage of GtkAllocation
+    - Generate the po/LINGUAS on build time
+    - Apply patch from Debian to fix battery plugin display
+    - Some fixes for GTK3 building
+    - Add flags for GTK3 migration
+    - Add missing X11 to the linker
+    - Use only .ui files instead of glade files
+    - Fix brown bag off-by-one in timer setting exposed by once-per-minute
+      update (Bug3124474)
+    - Battery percentage incorrectly always evaluates as
+      100 percent (Bug3006059)
+    - Fix build issue with symbol "alarm" showing up on F14 (Bug3033293)
+  * FIx escription synopsis starts with article.
+  * Drop batt_status.patch: included in upstream.
+  * Removing useless override_dh_auto_clean in rules file.
+  * Disabling override_dh_auto_test in rules file: check failed in po/.
+  * Use linux-any instead of hardcoded list in control file. (Closes: #634319)
+  * Add [pt_BR] keys in lxde-x-terminal-emulator.desktop
+    and lxde-x-www-browser.desktop. (Closes: 607076)
+    Thanks Sérgio Cipolla <secipolla@gmail.com>.
+  * Add [zh_TW] keys lxde-x-www-browser.desktop.
+  * Added lxpanel.hints.5 from
+    Mats Erik Andersson <mats.andersson@gisladisker.se>. (Closes: #601871)
+  * Apply configure_desktop_number.patch: configuration for
+    desktop number for the pager plugin. (Closes: #608421)
+    Thanks Artur Rona <ari-tczew@tlen.pl>.
+  * Drop redefine-alarm-variable.patch: included in upstream.
+  * Refresh configure_desktop_number.patch.
+  * Refresh missing_glades.patch.
+  * Apply 10_fix_menu.patch: Fix crash on menu plugin. From Julien Lavergne.
+
+ -- Andrew Lee (李健秋) <ajqlee@debian.org>  Fri, 29 Jul 2011 18:22:30 +0800
+
 lxpanel (0.5.6-1) unstable; urgency=low
 
   * New upstream release (Closes:#555575, #577599, #581980)
