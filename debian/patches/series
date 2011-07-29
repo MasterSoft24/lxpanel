@@ -1,4 +1,3 @@
 missing_glades.patch
 default-config.patch
-redefine-alarm-variable.patch
 configure_desktop_number.patch
