@@ -1,7 +1,9 @@
 [Desktop Entry]
 Encoding=UTF-8
 Name=Web Browser
+Name[pt_BR]=Navegador web
 GenericName=X Web Browser
+GenericName[pt_BR]=Navegador web gráfico
 Exec=/usr/bin/x-www-browser %u
 Terminal=false
 Type=Application
