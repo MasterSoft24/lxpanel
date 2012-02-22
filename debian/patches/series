@@ -1,2 +1,3 @@
 default-config.patch
 configure_desktop_number.patch
+potfiles-in.patch
