@@ -1,3 +1,20 @@
+lxpanel (0.5.8-2) unstable; urgency=low
+
+  [ Sergey Slipchenko ]
+  * Remove lintian-overrides from install
+  * Removed unused patch
+  * Changed icon to browser
+  * Drop debian/source/options
+  * Drop missing_glades.patch (Closes: #658001)
+  * Refresh default-config.patch
+  * Add potfiles-in.patch
+  * Remove override_dh_auto_test from rules
+  * Add run-in-background.patch (Closes: #656672)
+  * Move development files to lxpanel-dev (Closes: #581959)
+  * Change icon name to web-browser
+
+ -- Andrew Lee (李健秋) <ajqlee@debian.org>  Sat, 03 Mar 2012 18:08:09 +0800
+
 lxpanel (0.5.8-1) unstable; urgency=low
 
   * Merging upstream version 0.5.8:
