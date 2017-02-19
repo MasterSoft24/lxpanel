@@ -194,6 +194,7 @@ plugin_volume=
 plugin_cpu=
 plugin_deskno=
 plugin_batt=
+plugin_batticonic=
 plugin_xkb=
 plugin_kbled=
 plugin_thermal=
@@ -208,7 +209,7 @@ AC_ARG_WITH(plugins,
 [                         'all' builds all plugins (default), 'none' builds none ]
 [                         plugins prefixed with '-' are not built]
 [                         Possible plugins are: ]
-[                         netstatus, netstat, volume, cpu, deskno, batt, kbled,]
+[                         netstatus, netstat, volume, cpu, deskno, batticonic,  batt, kbled,]
 [                         xkb, thermal, cpufreq, monitors, indicator, weather]
 , plugins="$withval",[plugins="all"])
 
@@ -219,7 +220,7 @@ if test x"$plugins" != xall -a x"$plugins" != xnone; then
     fi
 fi
 
-ALL_PLUGINS_LIST="netstatus netstat volume volumealsa cpu deskno batt kbled xkb thermal cpufreq monitors indicator weather"
+ALL_PLUGINS_LIST="netstatus netstat volume volumealsa cpu deskno batt batticonic kbled xkb thermal cpufreq monitors indicator weather"
 
 AC_DEFUN([check_plugin_name],[
     plugin_found=false
@@ -287,6 +288,7 @@ PLUGINS_LIST="\
     $plugin_cpu \
     $plugin_deskno \
     $plugin_batt \
+    $plugin_batticonic \
     $plugin_kbled \
     $plugin_xkb \
     $plugin_thermal \
@@ -431,6 +433,9 @@ echo Building dynamic plugins:
     if test x"$plugin_batt" != x; then
         AC_MSG_RESULT([    batt - Monitor battery status])
     fi
+    if test x"$plugin_batticonic" != x; then
+        AC_MSG_RESULT([    batticonic - Modern style monitor battery status])
+    fi   
     if test x"$plugin_kbled" != x; then
         AC_MSG_RESULT([    kbled - Indicator for CapsLock, NumLock, and ScrLock])
     fi

@@ -59,6 +59,7 @@ pkglib_LTLIBRARIES = $(DYNAMIC_PLUGINS)
 
 EXTRA_LTLIBRARIES = \
 	batt.la \
+	batticonic.la \
 	cpu.la \
 	cpufreq.la \
 	deskno.la \
@@ -79,6 +80,12 @@ batt_la_SOURCES = \
 	batt/batt.c \
 	batt/batt_sys.c
 batt_la_CFLAGS = -I$(srcdir)/batt
+
+# batticonic
+batticonic_la_SOURCES = \
+	batticonic/batticonic.c \
+	batticonic/bat_sys.c
+batticonic_la_CFLAGS = -I$(srcdir)/batticonic
 
 # cpu
 cpu_la_SOURCES = cpu/cpu.c
@@ -298,6 +305,7 @@ flags_DATA= \
 
 EXTRA_DIST = \
 	batt/batt_sys.h \
+	batticonic/bat_sys.h \
 	netstat/netstat.h \
 	netstat/nsconfig.h \
 	netstat/devproc.h \
